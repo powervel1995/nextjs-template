@@ -12,7 +12,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "preCommit": "npm run lint && npm run prettier",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/node": "18.11.9",
@@ -26,6 +28,7 @@
     "typescript": "4.9.3"
   },
   "devDependencies": {
+    "husky": "^8.0.2",
     "prettier": "^2.7.1"
   }
 }
