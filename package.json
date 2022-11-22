@@ -13,7 +13,7 @@
     "start": "next start",
     "lint": "next lint",
     "prettier": "prettier --write .",
-    "preCommit": "npm run lint && npm run prettier",
+    "pre-commit": "npm run lint && npm run prettier",
     "prepare": "husky install"
   },
   "dependencies": {
