@@ -6,6 +6,15 @@ const nextConfig = {
   images: {
     domains: [],
   },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/auth/login',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
